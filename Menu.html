@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="Menu.css">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+   ]
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link href = "https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel = "stylesheet">
+    
+    <style>
+    
+
+        @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+        }
+
+        @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+        }
+
+        @media only screen and (max-width: 300px) {
+        .Caption-text {font-size: 11px}
+        }
+        body {
+            background-color:azure;
+        }
+        
+
+    </style>
+</head>
+<body>
+  <header>
+    <a href="Home.html"><img class="Home_Logo" src="media/Home_Oasis Logo.png" alt="Logo" /></a>
+    <nav>
+      <ul class="Nav_Links">
+        <li><a href="Menu.html">Menu</a></li>
+        <!--Insert Links-->
+        <li><a href="About_Us.html">About</a></li>
+        <!--Insert Links-->
+        <li><a href="review.html">Stories</a></li>
+        <!--Insert Links-->
+      </ul>
+    </nav>
+  </header>
+  
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="media/biryani.jpg" alt="appetizer" style="width:100%;height: 450px;">
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="media/bq1.jpg" alt="barbeque" style="width:100%;height: 450px;">
+          </div>
+        
+        <div class="mySlides fade">
+          <img src="media/mc.jpg" alt="main course" style="width:100%;height: 450px;">
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="media/dessert1.jpg" alt="dessert" style="width:100%;height: 450px;">
+          </div>
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span>
+          <span class="dot"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 4000); // Change image every 4 seconds
+        }
+        </script>
+        
+        <br>
+        <h1 class="menu_head">Menu</h1>
+        
+        <div class="margin_1">
+          <img src="media/starter1.jpg" class="food_image">
+          <p class="special">Starters</p>
+          
+          <p class="food_name">Tandoori Chicken</p>
+          <p class="price">359/-</p>
+          
+          <p class="food_name">Tandoori Shrimp</p>
+          <p class="price">459/-</p>
+          
+          <p class="food_name">Seekh Kabab</p>
+          <p class="price">499/-</p>
+          
+          <p class="food_name">Paneer Tikka</p>
+          <p class="price">349/-</p>
+          
+          <p class="food_name">Tandoori Mix Grill</p>
+          <p class="price1">899/-</p>
+          
+        </div>
+
+        <div class="margin_2">
+          <img src="media/mc1.jpg" class="food_image">
+          <p class="special">Main Course</p>
+          
+          <p class="food_name">Chicken Tikka Masala</p>
+          <p class="price">539/-</p>
+          
+          <p class="food_name">Lamb Curry</p>
+          <p class="price">789/-</p>
+          
+          <p class="food_name">Shrimp Garlic</p>
+          <p class="price">669/-</p>
+          
+          <p class="food_name">Lamb Biryani</p>
+          <p class="price">659/-</p>
+          
+          <p class="food_name">Paneer Butter Masala</p>
+          <p class="price1">629/-</p>
+          
+        </div>
+
+        <div class="margin_2">
+          <img src="media/dessert3.jpg" class="food_image">
+          <p class="special">Dessert</p>
+          
+          <p class="food_name">Gulab Jamun</p>
+          <p class="price">151/-</p>
+          
+          <p class="food_name">Kulfi</p>
+          <p class="price">121/-</p>
+          
+          <p class="food_name">Mango Pudding</p>
+          <p class="price">189/-</p>
+          
+          <p class="food_name">Gajar Halwa</p>
+          <p class="price2">221/-</p>
+          
+        </div>
+
+        <div class="margin_2">
+          <img src="media/Beverages.jpg" class="food_image">
+          <p class="special">Beverages</p>
+          
+          <p class="food_name">Mango Lassi</p>
+          <p class="price">121/-</p>
+          
+          <p class="food_name">Tea</p>
+          <p class="price">89/-</p>
+          
+          <p class="food_name">Soft Drinks</p>
+          <p class="price">131/-</p>
+          
+          <p class="food_name">Bottles Water</p>
+          <p class="price1">51/-</p>
+          
+        </div>
+
+        <footer class = "Footer">
+          <div class = "FooterContainer">
+              <div class = "Row">
+                  <div class = "Footer-Column">
+                      <h4>Oasis</h4>
+                      <ul>
+                          <li><a href = "#">Our Services</a></li>
+                          <li><a href = "#">Affiliate Partners</a></li>
+                          <li><a href = "#">Feedback</a></li>
+                      </ul>
+                  </div>
+  
+                  <div class = "Footer-Column">
+                      <h4>Get Help</h4>
+                      <ul>
+                          <li><a href = "#">FAQ</a></li>
+                          <li><a href = "#">Contact Us</a></li>
+                      </ul>
+                  </div>
+  
+                  <div class = "Footer-Column">
+                      <h4>Online Delivery</h4>
+                      <ul>
+                          <li><a href = "#">Order Status</a></li>
+                          <li><a href = "#">Payment Options</a></li>
+                          <li><a href = "#">Delivery Partners</a></li>
+                      </ul>
+                  </div>
+  
+                  <div class = "Footer-Column">
+                      <h4>Follow Us</h4>
+                      <div class = "Social-Links">
+                          <a href = "#"><i class = "fab fa-facebook-f"></i></a>
+                          <a href = "#"><i class = "fab fa-twitter"></i></a>
+                          <a href = "#"><i class = "fab fa-instagram"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+       
+        
+</body>
+</html>

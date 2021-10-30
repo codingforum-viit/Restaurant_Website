@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{box-sizing: border-box;}
+body {font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+}
+.mySlides {display: none;}
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    padding-top: 105px;
+    margin-bottom: 50px;
+}
+
+
+
+.dot {
+    position: relative;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: brown;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active {
+    background-color: #717171;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  .menu_head {
+    text-align: center;
+    background-color: honeydew;
+    padding:15px;
+    border: 2px solid cornsilk;
+    font-size: 50px;
+    font-family:sans-serif;
+    margin-top: 50px;
+  }
+
+  .menu_box {
+    padding:8px;
+  }
+
+  
+  .food_image {
+    float: left;
+    width:30%;
+    height: 450px;
+  }
+  .heading {
+      margin-bottom: 1px;
+  }
+
+  .heading ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color: #010e1e;
+    opacity: 0.8;
+    margin-bottom: 10px;
+    }
+
+    .heading li {
+    float:left;
+    font-size: larger;
+    height: 63px;
+    width: 20%;
+    }
+
+    .heading li a {
+    display:block;
+    color:white;
+    text-align:center;
+    padding: 20px 15px;
+    text-decoration:none;
+    }
+
+    .heading li a:hover {
+    background-color:#275e77;
+    }
+
+    .menu_list {
+        border-bottom: 1.5px solid grey;
+        margin-left:410px;
+        font-size: 30px;
+    }
+    .logo_style{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 63px;
+    }
+    .margin_1 {
+      margin-top: 100px;
+    }
+    .margin_2 {
+      margin-top: 500px;
+    }
+    .food_name{
+      width:55%; 
+      float:left;
+      font-size:18px;
+      color: rgb(75, 73, 73);
+      padding-left: 35px; 
+      margin-top: 20px;
+    }
+    .price {
+      width:15%; 
+      float: left;
+      margin-top: 20px; 
+      font-size: 18px;
+      color:rgb(75, 73, 73);
+    }
+    .price1 {
+      width:15%; 
+      float: left;
+      margin-top: 20px; 
+      margin-bottom: 230px;
+      font-size: 18px;
+      color:rgb(75, 73, 73)
+      
+    }
+    .price2 {
+      width:15%; 
+      float: left;
+      margin-top: 20px; 
+      margin-bottom: 280px;
+      font-size: 18px;
+      color:rgb(75, 73, 73)
+      
+    }
+   .menu_head{
+      font-family: "Lobster",sans-serif;
+      letter-spacing: 3px;
+    }
+
+    .special {
+      width: 60%; 
+      float: left;
+      border-bottom: 1.5px solid grey;
+      margin-left: 35px;
+      font-size: 30px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  
+
+    @media (max-width:500px){
+      .food_image{
+      display: block;
+      margin-left: 5%;
+      margin-right: 10%;
+      width: 85%;
+      height: 350px;
+      }
+    }
+    @media (max-width:500px){
+      .margin_1{
+        margin-top: 10px;
+      }
+    }
+    @media (max-width:500px){
+      .margin_2{
+        margin-top: 50px;
+      }
+    }
+    @media (max-width:500px){
+      .price1{
+        margin-bottom: 50px;
+      }
+    }
+    @media (max-width:500px){
+      .price2{
+        margin-bottom: 50px;
+      }
+    }
+    @media (max-width:500px){
+      .heading li {
+        height: 78px;
+      }
+    }
+    @media (max-width:500px){
+      .slideshow-container{
+        height: 150px;
+      }
+    }
+
+
+    /* footer starts  */
+    .FooterContainer {
+      max-width: 1170px;
+      margin: auto;
+  }
+  
+  .Row {
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  ul {
+      list-style: none;
+  }
+  
+  .Footer {
+      background-color: #24262b;
+      padding: 70px 0;
+      position: absolute;
+      top: 360%;
+      width: 100%;
+  }
+  
+  .Footer-Column {
+      width: 25%;
+      padding: 0 15px;   
+  }
+  
+  .Footer-Column h4 {
+      font-size: 18px;
+      color: #ffffff;
+      text-transform: capitalize;
+      margin-bottom: 35px;
+      font-weight: 500;
+      position: relative;
+  }
+  
+  .Footer-Column h4::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      background-color: #e91e63;
+      height: 2px;
+      box-sizing: border-box;
+      width: 50px;
+  }
+  
+  .Footer-Column ul li:not(:last-child) {
+      margin-bottom: 10px;
+  }
+  
+  .Footer-Column ul li a {
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 300;
+      color: #bbbbbb;
+      display: block;
+      transition: all 0.3s ease;
+  }
+  
+  .Footer-Column ul li a:hover {
+      color: #ffffff;
+      padding-left: 8px;
+  }
+  
+  .Footer-Column .Social-Links a {
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      background-color: rgba(255, 255, 255, 0.2);
+      margin: 0 10px 10px 0;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      color: #ffffff;
+      transition: all 0.5s ease;
+  }
+  
+  .Footer-Column .Social-Links a:hover {
+      color: #24262b;
+      background-color: #ffffff;
+  }
+  
+  /*Responsive Part*/
+  @media(max-width: 767px){
+      .Footer-Column {
+          width: 50%;
+          margin-bottom: 30px;
+      }
+  }
+  
+  @media(max-width: 574px){
+      .Footer-Column {
+          width: 100%;
+      }
+  }
+  
+    /* footer ends  */
+    
+
+/* navbar starts  */
+.Home_Logo{
+  width: 10%;
+  height: 10%;
+  cursor: pointer;
+  border: 2px solid white;
+  border-radius: 40px;
+  background-color: #fffbff;
+  padding-left: 9px;
+  padding-right: 9px;
+  margin-top: 4px;
+}
+
+header li, a{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1vw;
+  
+  color: #fffbff;
+  text-decoration: none;
+}
+
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 5px;
+  background-color: #24262b;
+  position: fixed;
+  top: 0%;
+  z-index: 1;
+  width: 100%;
+  height: 13%;
+  
+}
+
+.Nav_Links{
+  list-style: none;
+}
+
+.Nav_Links li{
+  display:inline-block;
+  padding: 0px 0.8em;
+  align-items: flex-end;
+  
+}
+
+.Nav_Links li a{
+  transition: all 0.3s ease 0s;
+}
+
+.Nav_Links li a:hover{
+  color: chocolate;
+}
+
+/* navbar ends  */
